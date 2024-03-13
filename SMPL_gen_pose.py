@@ -22,3 +22,8 @@ print(result.vertices.shape) # (1, 6890, 3)
 mesh = trimesh.Trimesh(vertices=result.vertices[0].cpu().numpy(), 
                        faces=smpl_model.faces)
 mesh.export('smpl_mesh.obj')
+
+# Visualization using blender
+# Please refer to doc\Blender OBJ Sequence.md
+# Also, available in the following link:
+# https://blog.csdn.net/wjrzm2001/article/details/136676240
